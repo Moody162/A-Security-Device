@@ -99,5 +99,5 @@ def guess_average(tries):
 
     return (minimum, maximum, total / tries)
 
-print("(min, max, avg) =", guess_average(50))
+print("(min, max, avg) =", guess_average(20))
 
