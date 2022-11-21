@@ -21,56 +21,55 @@ class SecurityDevice:
     def enter(self, val):
         try:
             val = int(val)
+            if self.state == 0:
+                if val == 8:
+                    self.state += 1
+                else:
+                    self.state = 0
+            elif self.state == 1:
+                if val == 2:
+                    self.state += 1
+                elif val == 8:
+                    self.state = 1
+                else:
+                    self.state = 0
+            elif self.state == 2:
+                if val == 8:
+                    self.state += 1
+                else:
+                    self.state = 0
+            elif self.state == 3:
+                if val == 5:
+                    self.state += 1
+                elif val == 2:
+                    self.state = 2
+                elif val == 8:
+                    self.state = 1
+                else:
+                    self.state = 0
+            elif self.state == 4:
+                if val == 2:
+                    self.state += 1
+                elif val == 8:
+                    self.state = 1
+                else:
+                    self.state = 0
+            elif self.state == 5:
+                if val == 1:
+                    self.state = self.UNLOCK_STATE
+                elif val == 4:
+                    self.state = self.LOCK_STATE
+                elif val == 8:
+                    self.state = 1
+                else:
+                    self.state = 0
+            elif self.state == self.UNLOCK_STATE or self.state == self.LOCK_STATE:
+                if val == 8:
+                    self.state = 1
+                else:
+                    self.state = 0
         except:
-            self.state = 0
-
-        if self.state == 0:
-            if val == 8:
-                self.state += 1
-            else:
-                self.state = 0
-        elif self.state == 1:
-            if val == 2:
-                self.state += 1
-            elif val == 8:
-                self.state = 1
-            else:
-                self.state = 0
-        elif self.state == 2:
-            if val == 8:
-                self.state += 1
-            else:
-                self.state = 0
-        elif self.state == 3:
-            if val == 5:
-                self.state += 1
-            elif val == 2:
-                self.state = 2
-            elif val == 8:
-                self.state = 1
-            else:
-                self.state = 0
-        elif self.state == 4:
-            if val == 2:
-                self.state += 1
-            elif val == 8:
-                self.state = 1
-            else:
-                self.state = 0
-        elif self.state == 5:
-            if val == 1:
-                self.state = self.UNLOCK_STATE
-            elif val == 4:
-                self.state = self.LOCK_STATE
-            elif val == 8:
-                self.state = 1
-            else:
-                self.state = 0
-        elif self.state == self.UNLOCK_STATE or self.state == self.LOCK_STATE:
-            if val == 8:
-                self.state = 1
-            else:
-                self.state = 0
+            pass
 
 def start_device():
     dev = SecurityDevice()
