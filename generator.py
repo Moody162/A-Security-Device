@@ -23,6 +23,9 @@ class SecurityDevice:
     def enter(self, val):
         try:
             val = int(val)
+            if val < 0: # no negative values can be entered on the security device
+                val = -val
+
             if self.state == 0: # ''
                 if val == 8:
                     self.state += 1
@@ -70,8 +73,8 @@ class SecurityDevice:
                     self.state = 1
                 else:
                     self.state = 0
-        except:
-            pass
+        except: # when entered a non-integer symbol we reset the state of the FSM
+            self.state = 0 
 
 # returns the number of generated symbols until the passcode was guessed
 def guess_passcode():
