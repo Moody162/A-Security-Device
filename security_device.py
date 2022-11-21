@@ -21,24 +21,24 @@ class SecurityDevice:
     def enter(self, val):
         try:
             val = int(val)
-            if self.state == 0:
+            if self.state == 0: # ''
                 if val == 8:
                     self.state += 1
                 else:
                     self.state = 0
-            elif self.state == 1:
+            elif self.state == 1: # '8'
                 if val == 2:
                     self.state += 1
                 elif val == 8:
                     self.state = 1
                 else:
                     self.state = 0
-            elif self.state == 2:
+            elif self.state == 2: # '82'
                 if val == 8:
                     self.state += 1
                 else:
                     self.state = 0
-            elif self.state == 3:
+            elif self.state == 3: # '828'
                 if val == 5:
                     self.state += 1
                 elif val == 2:
@@ -47,14 +47,14 @@ class SecurityDevice:
                     self.state = 1
                 else:
                     self.state = 0
-            elif self.state == 4:
+            elif self.state == 4: # '8285'
                 if val == 2:
                     self.state += 1
                 elif val == 8:
                     self.state = 1
                 else:
                     self.state = 0
-            elif self.state == 5:
+            elif self.state == 5: # '82852'
                 if val == 1:
                     self.state = self.UNLOCK_STATE
                 elif val == 4:
@@ -63,7 +63,7 @@ class SecurityDevice:
                     self.state = 1
                 else:
                     self.state = 0
-            elif self.state == self.UNLOCK_STATE or self.state == self.LOCK_STATE:
+            elif self.state == self.UNLOCK_STATE or self.state == self.LOCK_STATE: # '828521' / '828524'
                 if val == 8:
                     self.state = 1
                 else:
