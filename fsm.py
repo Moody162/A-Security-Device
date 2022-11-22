@@ -12,9 +12,11 @@ class SecurityDevice:
     
     def output(self):
         if self.state == self.UNLOCK_STATE:
-            print('Unlock')
+            return 'Unlock'
         elif self.state == self.LOCK_STATE:
-            print('Lock')
+            return 'Lock'
+        
+        return None
 
     def enter(self, val):
         try:

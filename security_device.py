@@ -8,6 +8,8 @@ def start_device():
         val = input()
         dev.enter(val)
         #print('Current state', str(dev.state))
-        dev.output()
+        message = dev.output()
+        if message:
+            print(dev.output())
 
 start_device()
