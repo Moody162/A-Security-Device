@@ -2,7 +2,31 @@
 
 ## Project description ##
 
+**IIT Fall 2022 - CS330 Coding assignment**
+
 1. In the first part, `security_device.py` implements a simple Security Device in Python utilizing a Finite State Machine. The unlock code for the Security device is: **828521**. The lock code for the Security Device is: **828524**. THE State Transition Digram of the FSM can be seen below. Input that cannot be understood by the FSM (i.e. characters or strings, for example), will reset the state of the FSM to the initial state (state 0).
-2. In the second part, `generator.py` randomly guesses the unlock passcode of the Security Device 20 times, and prints a 3-tuple `(min, max, average)` describing the minumum and maximum number of digits randomly generated until the passcode was guessed, and the average within all 20 times.
+
+2. In the second part, `generator.py` randomly guesses the unlock passcode of the Security Device 20 times, and prints a 3-tuple `(min, max, average)` 
+describing the minumum and maximum number of digits randomly generated until the passcode was guessed, and the average within all 20 times.
+
+Both parts import the `fsm.py` module, where I have implemented the class for a Security Device that utilizes a Finite State Machine. 
 
 ![Screenshot from 2022-11-22 17-21-37](https://user-images.githubusercontent.com/16467758/203440884-e4d3daa9-5836-4e7e-9882-520ac116decf.png)
+
+## Getting started ##
+
+Instructions in this README file are for a Linux environment (Ubuntu 22.04).
+
+### Prerequisites ###
+
+For the project setup, `python` and the `coverage` Python module have to be installed.
+
+1. To install `python`, run the following commands:
+```
+$ sudo apt update
+$ sudo apt install python3
+```
+2. To install the `coverage` module, run the following command:
+```
+$ pip install coverage
+```
