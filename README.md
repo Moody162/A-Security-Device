@@ -77,6 +77,7 @@ For the second part, run `generator.py`:
 ```
 $ ./generator.py
 ```
+- This process is not instant and takes a bit of time (maybe approximately 30 seconds)
 
 ### Author ###
 Mohamad Dib Fares - fares.mohamad1602@gmail.com
