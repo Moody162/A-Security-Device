@@ -19,7 +19,7 @@ Instructions in this README file are for a Linux environment (Ubuntu 22.04).
 
 ### Prerequisites ###
 
-For the project setup, `python`, the `coverage` Python module, and `git` have to be installed.
+In order to effectively setup the project, `python`, the `coverage` Python module, and `git` have to be installed.
 
 1. To install `python`, run the following commands:
 ```
@@ -37,3 +37,12 @@ $ pip install coverage
 $ sudo apt-get update
 $ sudo apt-get install git-all
 ```
+
+### Setup ###
+
+1. Clone the repository:
+```
+$ git clone https://github.com/Moody162/A-Security-Device.git
+```
+
+2. Run the unittests and make sure they all pass:
