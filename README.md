@@ -68,11 +68,10 @@ For the first part of the project, run `security_device.py`, the Security Device
 ```
 $ ./security_device.py
 ```
-Enter input from keyboard, once at a time, followed by `Enter`.
-
-After every sequence of characters that make up the unlock passcode **828521**, the message "Unlock" should be displayed. 
-
-After every sequence of characters that make up the lock passcode **828524**, the message "Lock" should be displayed.
+- Enter input from keyboard, once at a time, followed by `Enter`.
+- After every sequence of characters that make up the unlock passcode **828521**, the message "Unlock" should be displayed. 
+- After every sequence of characters that make up the lock passcode **828524**, the message "Lock" should be displayed.
+- Anything else should be ignored.
 
 For the second part, run `generator.py`:
 ```
