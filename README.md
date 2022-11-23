@@ -78,3 +78,7 @@ For the second part, run `generator.py`:
 ```
 $ ./generator.py
 ```
+
+### Author ###
+Mohamad Dib Fares
+fares.mohamad1602@gmail.com
