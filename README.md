@@ -50,7 +50,7 @@ $ git clone https://github.com/Moody162/A-Security-Device.git
 $ python3 -m coverage run -m unittest
 ```
 
-3. View unittest coverage report
+3. View unittest coverage report:
 ```
 $ python3 -m coverage report
 ```
@@ -60,4 +60,4 @@ and to generate the coverage report in HTML format:
 $ python3 -m coverage html
 ```
 
-The HTML version of the unittest coverage report can be found at `./htmlcov/index.html`
+The HTML version of the unittest coverage report can be found at `./htmlcov/index.html`.
