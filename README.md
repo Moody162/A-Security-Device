@@ -61,3 +61,15 @@ $ python3 -m coverage html
 ```
 
 The HTML version of the unittest coverage report can be found at `./htmlcov/index.html`.
+
+4. Run the executables:
+
+For the first part of the project, run `security_device.py`, the Security Device simulator:
+```
+$ ./security_device.py
+```
+
+For the second part, run `generator.py`:
+```
+$ ./generator.py
+```
