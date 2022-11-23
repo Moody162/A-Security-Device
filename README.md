@@ -19,14 +19,21 @@ Instructions in this README file are for a Linux environment (Ubuntu 22.04).
 
 ### Prerequisites ###
 
-For the project setup, `python` and the `coverage` Python module have to be installed.
+For the project setup, `python`, the `coverage` Python module, and `git` have to be installed.
 
 1. To install `python`, run the following commands:
 ```
 $ sudo apt update
 $ sudo apt install python3
 ```
+
 2. To install the `coverage` module, run the following command:
 ```
 $ pip install coverage
+```
+
+3. To install `git`, run the following commands:
+```
+$ sudo apt-get update
+$ sudo apt-get install git-all
 ```
