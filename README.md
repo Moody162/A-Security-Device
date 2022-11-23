@@ -80,5 +80,4 @@ $ ./generator.py
 ```
 
 ### Author ###
-Mohamad Dib Fares
-fares.mohamad1602@gmail.com
+Mohamad Dib Fares - fares.mohamad1602@gmail.com
