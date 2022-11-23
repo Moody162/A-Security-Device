@@ -40,9 +40,10 @@ $ sudo apt-get install git-all
 
 ### Setup ###
 
-1. Clone the repository:
+1. Clone the repository and open the repository directory:
 ```
 $ git clone https://github.com/Moody162/A-Security-Device.git
+$ cd A-Security-Device
 ```
 
 2. Run unittests and generate coverage data:
